@@ -2,9 +2,11 @@ import axios from "axios";
 import "./App.css"
 import { useEffect, useState } from "react";
 import { Container } from "@mui/material";
+import Header from "./Components/Header";
 
 function App() {
   const [meanings, setMeanings] = useState([]);
+  const [language, setLanguage] = useState("en")
   const dictionaryApi = async () => {
     try {
       const data = await axios.get(
@@ -21,8 +23,10 @@ function App() {
     dictionaryApi();
   }, []);
   return (
-    <div style={{height:"100vh"}}>
-      <Container maxWidth="sm" backgroundColor="blue">hello</Container>
+    <div className="main-container">
+      <Container maxWidth="sm" backgroundColor="blue">
+      <Header language={language} setLanguage={setLanguage}/>
+      </Container>
     </div>
   );
 }
