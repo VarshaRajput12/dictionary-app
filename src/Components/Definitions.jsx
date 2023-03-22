@@ -13,8 +13,7 @@ const Definitions = ({ word, meanings, language }) => {
               <div className="definition">
                 <p>{def.definition}</p>
               </div>
-            )
-            )
+            ))
           )
         )
       )}
