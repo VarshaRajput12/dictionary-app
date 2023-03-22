@@ -1,8 +1,7 @@
 import axios from "axios";
 import "./App.css";
 import { useEffect, useState } from "react";
-import { Container } from "@mui/material";
-import Header from "./Components/Header";
+import Container from "./Components/Container";
 import Definitions from "./Components/Definitions";
 
 function App() {
@@ -26,15 +25,17 @@ function App() {
   }, [word, language]);
   return (
     <div className="main-container">
-      <Container maxWidth="sm" backgroundColor="blue">
-        <Header
+      <div className="innerContainer">
+        <Container
           word={word}
           setWord={setWord}
           language={language}
           setLanguage={setLanguage}
         />
-        {meanings && <Definitions word={word} meanings={meanings} language={language}/>}
-      </Container>
+        {meanings && (
+          <Definitions word={word} meanings={meanings} language={language} />
+        )}
+      </div>
     </div>
   );
 }

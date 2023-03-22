@@ -9,4 +9,13 @@
     height: 100vh;
     background-color: #282c34;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    
+}
+.innerContainer{
+    width: 40rem;
+    height: 80vh;
+    margin-top: 5rem;
+    text-align: center;
 }

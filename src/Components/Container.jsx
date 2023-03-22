@@ -1,9 +1,9 @@
 import { TextField, createTheme, ThemeProvider, MenuItem } from "@mui/material";
 import React from "react";
-import "./Header.css";
+import "./Container.css";
 import Languages from "./Language";
 
-const Header = ({ language, setLanguage, word, setWord }) => {
+const Container = ({ language, setLanguage, word, setWord }) => {
   const darkTheme = createTheme({
     palette: {
       mode: "dark",
@@ -17,7 +17,7 @@ const Header = ({ language, setLanguage, word, setWord }) => {
     setWord("")
   }
   return (
-    <div className="header">
+    <div className="Container">
       <h1>{word ? word : "Word Hunt"}</h1>
       <div className="inputs">
         <ThemeProvider theme={darkTheme}>
@@ -47,4 +47,4 @@ const Header = ({ language, setLanguage, word, setWord }) => {
   );
 };
 
-export default Header;
+export default Container;
