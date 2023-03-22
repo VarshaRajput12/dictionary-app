@@ -12,10 +12,10 @@ const Container = ({ language, setLanguage, word, setWord }) => {
       },
     },
   });
-  const handleChange = (language) =>{
-    setLanguage(language)
-    setWord("")
-  }
+  const handleChange = (language) => {
+    setLanguage(language);
+    setWord("");
+  };
   return (
     <div className="Container">
       <h1>{word ? word : "Word Hunt"}</h1>

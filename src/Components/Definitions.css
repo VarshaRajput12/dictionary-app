@@ -1,18 +1,17 @@
-.meanings{
-    display: flex;
-    flex-direction: column;
-    scrollbar-width: thin;
-    overflow-y: scroll;
-    height: 23rem;
-    margin-top: 2rem;
-    
+.meanings {
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin;
+  overflow-y: scroll;
+  height: 23rem;
+  margin-top: 2rem;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-.definition{
-    background-color: #fff;
-    color: black;
-    margin: 0.2rem 0;
+.definition {
+  background-color: #fff;
+  color: black;
+  margin: 0.2rem 0;
 }
